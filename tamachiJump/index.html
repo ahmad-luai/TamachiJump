@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<title>tamachiJump</title>
+		<style>
+			body {
+				scroll-behavior: none;
+				margin: 0;
+				background-color: #eeeeee;
+			}
+			canvas {
+				border: 1px solid black;
+				box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+			}
+			.ref {
+				position: absolute;
+				top: 0;
+				left: 0;
+				opacity: 0;
+			}
+			img {
+				position: absolute;
+				display: none;
+			}
+			.fire {
+				animation: rotation 2s infinite linear;
+			}
+
+			@keyframes rotation {
+				from {
+					transform: rotate(0deg);
+				}
+				to {
+					transform: rotate(359deg);
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<canvas class="gameCanvas"></canvas>
+		<img
+			src="ref.png"
+			class="ref"
+		/>
+		<img
+			src="bomb.png"
+			class="bomb"
+		/>
+		<img
+			src="char.png"
+			class="char"
+		/>
+		<img
+			src="jumpPlatform.png"
+			class="jumpPlatform"
+		/>
+		<img
+			src="jumpPlatform_2.png"
+			class="jumpPlatform2"
+		/>
+		<img
+			src="launch.png"
+			class="launchPlatform"
+		/>
+		<img
+			src="normalPlatform.png"
+			class="normalPlatform"
+		/>
+
+		<img
+			src="lavaTexture1.png"
+			class="lavaTexture1"
+		/>
+
+		<img
+			src="lavaTexture2.png"
+			class="lavaTexture2"
+		/>
+
+		<img
+			src="lavaTexture3.png"
+			class="lavaTexture3"
+		/>
+		<img
+			src="enemy.png"
+			class="enemy"
+		/>
+		<img
+			src="fire.png"
+			class="fire rotate"
+		/>
+		<img
+			src="bullet1.png"
+			class="bullet1"
+		/>
+		<img
+			src="bullet2.png"
+			class="bullet2 rotate"
+		/>
+		<script src="main.js"></script>
+	</body>
+</html>
